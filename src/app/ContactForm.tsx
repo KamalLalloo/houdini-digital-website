@@ -40,9 +40,10 @@ export default function ContactForm() {
       <div className={styles.container}>
         <h2 className={styles.heading}>Get In Touch</h2>
         <p className={styles.subheading}>
-          Ready to start your project? Fill out the form below and we'll get
+          Ready to start your project? Fill out the form below and {"we'll"} get
           back to you within 24 hours.
         </p>
+
         {!submitted ? (
           <form className={styles.form} onSubmit={handleSubmit}>
             <div className={styles.row}>
