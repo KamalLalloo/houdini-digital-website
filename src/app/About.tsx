@@ -4,7 +4,7 @@ import styles from "./About.module.css";
 
 export default function About() {
   return (
-    <section className={styles.about}>
+    <section id="about" className={styles.about}>
       <div className={styles.container}>
         <h2 className={styles.heading}>About Houdini Digital</h2>
         <p className={styles.text}>

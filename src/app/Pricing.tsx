@@ -75,44 +75,46 @@ const plans = [
 
 export default function Pricing() {
   return (
-    <section className={styles.pricingSection}>
-      <div className={styles.header}>
-        <h2 className={styles.heading}>Simple, Transparent Pricing</h2>
-        <p className={styles.subheading}>
-          Choose the plan that fits your business best.
-        </p>
-      </div>
-      <div className={styles.grid}>
-        {plans.map((plan) => (
-          <div
-            key={plan.name}
-            className={`${styles.card} ${
-              plan.highlight ? styles.highlight : ""
-            } ${plan.price === "Coming Soon" ? styles.comingSoon : ""}`}
-          >
-            <div className={styles.cardHead}>
-              <h3 className={styles.planName}>{plan.name}</h3>
-              <div className={styles.planPrice}>{plan.price}</div>
+    <section id="pricing" className={styles.pricing}>
+      <section className={styles.pricingSection}>
+        <div className={styles.header}>
+          <h2 className={styles.heading}>Simple, Transparent Pricing</h2>
+          <p className={styles.subheading}>
+            Choose the plan that fits your business best.
+          </p>
+        </div>
+        <div className={styles.grid}>
+          {plans.map((plan) => (
+            <div
+              key={plan.name}
+              className={`${styles.card} ${
+                plan.highlight ? styles.highlight : ""
+              } ${plan.price === "Coming Soon" ? styles.comingSoon : ""}`}
+            >
+              <div className={styles.cardHead}>
+                <h3 className={styles.planName}>{plan.name}</h3>
+                <div className={styles.planPrice}>{plan.price}</div>
+              </div>
+              <div className={styles.planDesc}>{plan.description}</div>
+              <ul className={styles.features}>
+                {plan.features.map((feature, idx) => (
+                  <li key={idx} className={styles.featureItem}>
+                    <span className={styles.checkmark}>
+                      {plan.price !== "Coming Soon" ? "✓" : "•"}
+                    </span>
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+              {plan.price !== "Coming Soon" ? (
+                <button className={styles.cta}>Get Started</button>
+              ) : (
+                <div className={styles.soon}>Launching Soon</div>
+              )}
             </div>
-            <div className={styles.planDesc}>{plan.description}</div>
-            <ul className={styles.features}>
-              {plan.features.map((feature, idx) => (
-                <li key={idx} className={styles.featureItem}>
-                  <span className={styles.checkmark}>
-                    {plan.price !== "Coming Soon" ? "✓" : "•"}
-                  </span>
-                  {feature}
-                </li>
-              ))}
-            </ul>
-            {plan.price !== "Coming Soon" ? (
-              <button className={styles.cta}>Get Started</button>
-            ) : (
-              <div className={styles.soon}>Launching Soon</div>
-            )}
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </section>
     </section>
   );
 }

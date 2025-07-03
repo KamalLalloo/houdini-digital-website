@@ -40,7 +40,11 @@
 }
 
 .nav a:hover {
-  color: #fff;
+  color: #00cfff;
+}
+
+.nav a.active {
+  color: #00cfff;
 }
 
 .cta {

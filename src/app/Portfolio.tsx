@@ -8,7 +8,7 @@ const projects = [
     title: "Randfontein Dental",
     img: "/portfolio-dental.png",
     desc: "Designed a modern, professional website for a dental clinic, improving their online presence and attracting more local patients",
-    link: "https://randfonteindental.co.za/", // replace with actual project link if you have one
+    link: "https://randfonteindental.co.za/",
   },
   {
     title: "Pinnacle Tuition",
@@ -26,7 +26,7 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <section className={styles.portfolio}>
+    <section id="work" className={styles.portfolio}>
       <div className={styles.top}>
         <h2 className={styles.heading}>Our Work Speaks For Itself</h2>
         <p className={styles.subheading}>
