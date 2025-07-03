@@ -6,7 +6,11 @@ const montserrat = Montserrat({
   weight: ["400", "600", "700"],
   display: "swap",
 });
-const syne = Syne({ subsets: ["latin"], weight: ["700"], display: "swap" });
+export const syne = Syne({
+  subsets: ["latin"],
+  weight: ["700"],
+  display: "swap",
+});
 
 // Apply Montserrat globally (as already done), Syne is used only in the Marquee component
 

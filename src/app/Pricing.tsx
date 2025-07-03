@@ -83,7 +83,7 @@ export default function Pricing() {
         </p>
       </div>
       <div className={styles.grid}>
-        {plans.map((plan, i) => (
+        {plans.map((plan) => (
           <div
             key={plan.name}
             className={`${styles.card} ${
