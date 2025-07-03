@@ -29,7 +29,7 @@ export default function ContactForm() {
 
       if (res.ok) setSubmitted(true);
       else alert("There was a problem submitting your form.");
-    } catch (err) {
+    } catch {
       alert("There was a problem submitting your form.");
     }
     setLoading(false);
