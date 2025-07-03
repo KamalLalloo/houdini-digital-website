@@ -104,4 +104,13 @@
   .buttons {
     justify-content: center;
   }
+
+  .right img {
+    width: 80%;
+    max-width: 280px;
+    max-height: 300px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+  }
 }
