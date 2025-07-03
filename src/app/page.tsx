@@ -7,6 +7,7 @@ import Portfolio from "./Portfolio";
 import CoreValues from "./CoreValues";
 import Pricing from "./Pricing";
 import Faq from "./Faq";
+import ContactForm from "./ContactForm";
 
 export default function HomePage() {
   return (
@@ -20,6 +21,7 @@ export default function HomePage() {
       <CoreValues />
       <Pricing />
       <Faq />
+      <ContactForm />
     </>
   );
 }
