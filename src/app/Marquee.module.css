@@ -1,0 +1,36 @@
+/* src/app/Marquee.module.css */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.marqueeWrapper {
+  overflow: hidden;
+  background: black;
+  padding: 10px 0;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.marquee {
+  display: inline-flex;
+  animation: marquee 85s linear infinite;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  gap: 40px;
+  font-family: "Syne", sans-serif;
+  text-transform: uppercase;
+}
+
+.marqueeWrapper:hover .marquee {
+  animation-play-state: paused;
+}
+
+.item {
+  display: inline-block;
+}
