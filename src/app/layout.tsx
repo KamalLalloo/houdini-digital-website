@@ -6,13 +6,12 @@ const montserrat = Montserrat({
   weight: ["400", "600", "700"],
   display: "swap",
 });
-export const syne = Syne({
+
+const syne = Syne({
   subsets: ["latin"],
   weight: ["700"],
   display: "swap",
 });
-
-// Apply Montserrat globally (as already done), Syne is used only in the Marquee component
 
 export const metadata = {
   title: "Houdini Digital",
@@ -25,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={montserrat.className}>
+    <html lang="en" className={`${montserrat.className} ${syne.className}`}>
       <body>{children}</body>
     </html>
   );
