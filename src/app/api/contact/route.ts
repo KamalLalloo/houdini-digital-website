@@ -17,15 +17,13 @@ export async function POST(req: NextRequest) {
       subject: `[Contact] ${data.subject}`,
       replyTo: data.email,
       html: `
-        <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${data.name}</p>
-        <p><strong>Email:</strong> ${data.email}</p>
-        <p><strong>Subject:</strong> ${data.subject}</p>
-        <p><strong>Message:</strong><br/>${data.message.replace(
-          /\n/g,
-          "<br/>"
-        )}</p>
-      `,
+  <h2>New Contact Form Submission</h2>
+  <p><strong>Name:</strong> ${data.name}</p>
+  <p><strong>Email:</strong> ${data.email}</p>
+  <p><strong>Phone:</strong> ${data.phone}</p>
+  <p><strong>Preferred Contact Method:</strong> ${data.contactMethod}</p>
+  <p><strong>Message:</strong><br/>${data.message.replace(/\n/g, "<br/>")}</p>
+`,
     });
 
     return NextResponse.json({ success: true });

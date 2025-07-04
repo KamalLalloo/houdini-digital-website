@@ -15,7 +15,11 @@ export default function ContactForm() {
     const data = {
       name: (form.elements.namedItem("name") as HTMLInputElement).value,
       email: (form.elements.namedItem("email") as HTMLInputElement).value,
-      subject: (form.elements.namedItem("subject") as HTMLInputElement).value,
+      phone: (form.elements.namedItem("phone") as HTMLInputElement).value,
+      contactMethod: (
+        form.elements.namedItem("contactMethod") as HTMLSelectElement
+      ).value,
+      subject: "Houdini Digital Contact Form",
       message: (form.elements.namedItem("message") as HTMLTextAreaElement)
         .value,
     };
@@ -43,7 +47,6 @@ export default function ContactForm() {
           Ready to start your project? Fill out the form below and {"we'll"} get
           back to you within 24 hours.
         </p>
-
         {!submitted ? (
           <form className={styles.form} onSubmit={handleSubmit}>
             <div className={styles.row}>
@@ -63,19 +66,35 @@ export default function ContactForm() {
                 placeholder="Your Email"
                 autoComplete="email"
               />
+              <input
+                className={styles.input}
+                type="tel"
+                name="phone"
+                required
+                placeholder="Your Phone Number"
+                autoComplete="tel"
+              />
             </div>
-            <input
-              className={styles.input}
-              type="text"
-              name="subject"
-              required
-              placeholder="Subject"
-            />
+            <div className={styles.row}>
+              <select
+                className={styles.input}
+                name="contactMethod"
+                required
+                defaultValue=""
+              >
+                <option value="" disabled>
+                  How should we contact you?
+                </option>
+                <option value="Email">Email</option>
+                <option value="Phone">Phone</option>
+                <option value="WhatsApp">WhatsApp</option>
+              </select>
+            </div>
             <textarea
               className={styles.textarea}
               name="message"
               required
-              placeholder="Your Message"
+              placeholder="Tell us about your project"
               rows={5}
             ></textarea>
             <button className={styles.cta} type="submit" disabled={loading}>
