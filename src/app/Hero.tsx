@@ -13,8 +13,13 @@ export default function Hero() {
           pages tailored for businesses ready to grow.
         </p>
         <div className={styles.buttons}>
-          <button className={styles.primary}>Get a Free Quote</button>
-          <button className={styles.secondary}>View Our Work</button>
+          <a href="#contact">
+            <button className={styles.primary}>Get a Free Quote</button>
+          </a>
+
+          <a href="#work">
+            <button className={styles.secondary}>View Our Work</button>
+          </a>
         </div>
       </div>
 
