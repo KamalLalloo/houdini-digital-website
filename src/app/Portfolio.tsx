@@ -14,13 +14,13 @@ const projects = [
     title: "Pinnacle Tuition",
     img: "/portfolio-tuition.jpg",
     desc: "Developed a responsive website for an online tutoring company, ensuring seamless user experience.",
-    link: "#",
+    link: "https://www.pinnacletuitiononline.co.za/",
   },
   {
     title: "Shinrin AI Solutions",
     img: "/portfolio-ai.jpg",
     desc: "Developed a sleek, cutting-edge website for an AI agency, showcasing their innovative solutions and attracting high-value clients.",
-    link: "#",
+    link: "https://shinrinsolutions.co.za/",
   },
 ];
 

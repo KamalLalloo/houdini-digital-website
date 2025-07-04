@@ -107,7 +107,9 @@ export default function Pricing() {
                 ))}
               </ul>
               {plan.price !== "Coming Soon" ? (
-                <button className={styles.cta}>Get Started</button>
+                <a href="#contact" className={styles.cta}>
+                  Get Started
+                </a>
               ) : (
                 <div className={styles.soon}>Launching Soon</div>
               )}
