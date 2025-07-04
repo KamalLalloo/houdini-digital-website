@@ -1,0 +1,123 @@
+.footer {
+  background: linear-gradient(to bottom, #000 60%, #00cfff 100%);
+  color: #fff;
+  padding: 40px 0 0 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  gap: 48px;
+  padding: 0 32px 32px 32px;
+}
+
+.about {
+  flex: 1 1 320px;
+  min-width: 280px;
+}
+.logoRow {
+  margin-bottom: 12px;
+}
+.description {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.contact {
+  flex: 1 1 320px;
+  min-width: 280px;
+  margin-top: 10px;
+}
+
+.getInTouch {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 16px #00cfff80;
+}
+.arrow {
+  font-size: 2rem;
+  margin-left: 4px;
+}
+
+.contactItem {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+.icon {
+  margin-right: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  min-height: 48px;
+}
+
+.links {
+  flex: 1 1 240px;
+  min-width: 200px;
+}
+.linksHeading {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #00cfff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 16px #00cfff90;
+}
+.links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.links li {
+  margin-bottom: 18px;
+}
+.links a {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.links a:hover {
+  color: #00cfff;
+}
+
+.bottom {
+  background: #00cfff;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 22px 0 22px 0;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 900px) {
+  .top {
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+  }
+  .about,
+  .contact,
+  .links {
+    min-width: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .links ul,
+  .contact {
+    justify-content: center;
+  }
+}

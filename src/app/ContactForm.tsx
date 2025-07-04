@@ -40,7 +40,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className={styles.contactSection}>
+    <section id="contact" className={styles.contactSection}>
       <div className={styles.container}>
         <h2 className={styles.heading}>Get In Touch</h2>
         <p className={styles.subheading}>

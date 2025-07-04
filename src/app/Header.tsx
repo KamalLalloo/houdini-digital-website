@@ -27,7 +27,9 @@ export default function Header() {
           <a href="#pricing">Pricing</a>
         </nav>
 
-        <button className={styles.cta}>Get a Quote</button>
+        <a href="#contact">
+          <button className={styles.cta}>Get a Quote</button>
+        </a>
 
         <button
           className={styles.menuToggle}
