@@ -112,7 +112,9 @@ export default function Services() {
           </div>
         </div>
         <div className={styles.ctaWrapper}>
-          <button className={styles.cta}>Book a Free Consultation</button>
+          <a href="#contact" className={styles.cta}>
+            Book a Free Consultation
+          </a>
         </div>
       </section>
     </section>

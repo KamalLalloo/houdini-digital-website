@@ -45,7 +45,9 @@
   padding: 14px 17px;
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
-  transition: border 0.17s, box-shadow 0.15s;
+  transition:
+    border 0.17s,
+    box-shadow 0.15s;
   outline: none;
 }
 
@@ -63,7 +65,7 @@
 .cta {
   margin: 0 auto;
   background: #00cfff;
-  color: #0a0a0a;
+  color: white;
   font-weight: 700;
   border: none;
   border-radius: 999px;
@@ -71,9 +73,13 @@
   font-size: 1.13rem;
   cursor: pointer;
   box-shadow: 0 0 24px #00cfff44;
-  transition: background 0.17s, color 0.17s, box-shadow 0.17s;
+  transition:
+    background 0.17s,
+    color 0.17s,
+    box-shadow 0.17s;
   letter-spacing: 1px;
   margin-top: 8px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .cta:hover:not(:disabled) {
