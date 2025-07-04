@@ -7,7 +7,10 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.left}>
-        <h1>Custom Websites & Funnels That Drive Results</h1>
+        <h1>
+          Custom Websites & Funnels That{" "}
+          <span className={styles.highlight}>Drive Results</span>
+        </h1>
         <p>
           We design fast, SEO-optimized websites and high-converting landing
           pages tailored for businesses ready to grow.
