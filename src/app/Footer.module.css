@@ -120,4 +120,7 @@
   .contact {
     justify-content: center;
   }
+  .bottom {
+    font-size: 15px;
+  }
 }
