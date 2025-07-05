@@ -5,7 +5,7 @@ import styles from "./Pricing.module.css";
 const plans = [
   {
     name: "Starter Package",
-    price: "R2,500",
+    price: " from R1,500",
     highlight: false,
     description:
       "Perfect for: Freelancers or small businesses that just need a simple, clean online presence.",
@@ -22,7 +22,7 @@ const plans = [
   },
   {
     name: "Business Package",
-    price: "R5,500",
+    price: "from R4,500",
     highlight: true,
     description:
       "Perfect for: Small to medium businesses ready for a full website.",
@@ -40,7 +40,7 @@ const plans = [
   },
   {
     name: "Premium Package",
-    price: "R9,500",
+    price: " from R8,500",
     highlight: false,
     description:
       "Perfect for: Businesses that want a more custom, detailed website.",
