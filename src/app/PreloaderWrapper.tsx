@@ -8,12 +8,18 @@ export default function PreloaderWrapper({
 }: {
   children: React.ReactNode;
 }) {
-  const [loading, setLoading] = useState(true);
+  const [showPreloader, setShowPreloader] = useState(true);
+  const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1400);
-    return () => clearTimeout(timer);
+    const fadeTimer = setTimeout(() => setFadeOut(true), 1200); // trigger fade
+    const removeTimer = setTimeout(() => setShowPreloader(false), 1800); // remove from DOM
+
+    return () => {
+      clearTimeout(fadeTimer);
+      clearTimeout(removeTimer);
+    };
   }, []);
 
-  return <>{loading ? <Preloader /> : children}</>;
+  return <>{showPreloader ? <Preloader fadeOut={fadeOut} /> : children}</>;
 }
