@@ -49,6 +49,8 @@
     border 0.18s,
     transform 0.18s;
   position: relative;
+
+  justify-content: space-between;
 }
 
 .card:hover {
@@ -75,11 +77,14 @@
 }
 
 .planName {
-  font-size: 1.19rem;
+  font-size: 1.35rem;
   font-weight: 700;
-  color: #fff;
+  color: #00cfff;
   font-family: "Montserrat", sans-serif;
-  margin-bottom: 3px;
+  margin-bottom: 6px;
+  text-shadow:
+    0 0 6px #00cfffaa,
+    0 0 12px #00cfff66;
 }
 
 .planPrice {
