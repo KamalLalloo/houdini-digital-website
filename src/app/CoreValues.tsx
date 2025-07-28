@@ -5,7 +5,7 @@ import styles from "./CoreValues.module.css";
 const values = [
   {
     icon: (
-      // Creativity icon (layers)
+      // Strategy icon (layers)
       <svg width="38" height="38" viewBox="0 0 38 38" fill="none">
         <rect
           x="6"
@@ -36,12 +36,12 @@ const values = [
         />
       </svg>
     ),
-    title: "Creativity",
-    desc: "We embrace original thinking and imaginative solutions to bring ideas to life.",
+    title: "Clarity-Driven Design",
+    desc: "We design with purpose—clear, goal-focused websites that turn visitors into clients.",
   },
   {
     icon: (
-      // Excellence icon (check)
+      // Performance icon (check in circle)
       <svg width="38" height="38" viewBox="0 0 38 38" fill="none">
         <circle cx="19" cy="19" r="16" stroke="#00CFFF" strokeWidth="2" />
         <path
@@ -53,12 +53,12 @@ const values = [
         />
       </svg>
     ),
-    title: "Excellence",
-    desc: "We strive for outstanding results and hold ourselves to the highest standards.",
+    title: "Speed & Performance",
+    desc: "We prioritize fast-loading, responsive websites that rank well and perform better.",
   },
   {
     icon: (
-      // Integrity icon (users reused)
+      // Simplicity icon (users icon reused for collaboration)
       <svg width="38" height="38" viewBox="0 0 38 38" fill="none">
         <circle cx="13" cy="17" r="4" stroke="#00CFFF" strokeWidth="2" />
         <circle cx="25" cy="17" r="4" stroke="#00CFFF" strokeWidth="2" />
@@ -70,12 +70,12 @@ const values = [
         />
       </svg>
     ),
-    title: "Integrity",
-    desc: "We operate with honesty and transparency, staying true to our values in all that we do.",
+    title: "Simple & Scalable",
+    desc: "We build websites that are easy to use, easy to grow, and easy to love—for you and your audience.",
   },
   {
     icon: (
-      // People-First icon (heart)
+      // Partnership icon (heart for relationships)
       <svg width="38" height="38" viewBox="0 0 38 38" fill="none">
         <path
           d="M19 31s-8-6.28-8-12a6 6 0 0 1 12 0 6 6 0 0 1 12 0c0 5.72-8 12-8 12z"
@@ -85,8 +85,8 @@ const values = [
         />
       </svg>
     ),
-    title: "People-First",
-    desc: "We focus on building lasting relationships by putting people at the center of our process.",
+    title: "Partnership First",
+    desc: "We collaborate closely with clients, acting as a creative partner—not just a vendor.",
   },
 ];
 
