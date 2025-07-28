@@ -1,5 +1,5 @@
 .portfolio {
-  padding: 80px 20px 100px 20px;
+  padding: 0px 20px 80px 20px;
   background: #000;
   width: 100%;
 }
@@ -35,7 +35,9 @@
 
 .card {
   border-radius: 38px;
-  box-shadow: 0 0 32px 0 #222, 0 0 32px 2px #00cfff44;
+  box-shadow:
+    0 0 32px 0 #222,
+    0 0 32px 2px #00cfff44;
   width: 350px;
   min-width: 300px;
   max-width: 380px;
@@ -43,13 +45,17 @@
   flex-direction: column;
   align-items: center;
   padding: 48px 28px 32px 28px;
-  transition: box-shadow 0.18s, transform 0.18s;
+  transition:
+    box-shadow 0.18s,
+    transform 0.18s;
   position: relative;
   margin-bottom: 36px;
 }
 
 .card:hover {
-  box-shadow: 0 0 50px #00cfff, 0 0 70px #00cfff22;
+  box-shadow:
+    0 0 50px #00cfff,
+    0 0 70px #00cfff22;
   transform: translateY(-8px) scale(1.03);
 }
 
@@ -58,7 +64,9 @@
   border-radius: 26px;
   padding: 18px;
   margin-bottom: 18px;
-  box-shadow: 0 0 18px #00cfff88, /* inner glow */ 0 0 42px #00cfffaa; /* outer glow */
+  box-shadow:
+    0 0 18px #00cfff88,
+    /* inner glow */ 0 0 42px #00cfffaa; /* outer glow */
   width: 190px;
   height: 190px;
   display: flex;
@@ -102,7 +110,10 @@
   cursor: pointer;
   text-decoration: none;
   box-shadow: 0 0 24px #00cfff33;
-  transition: background 0.16s, color 0.16s, box-shadow 0.16s;
+  transition:
+    background 0.16s,
+    color 0.16s,
+    box-shadow 0.16s;
   display: inline-block; /* Add this line */
   margin: 0 auto; /* Center if inside a container with text-align: center */
   margin-top: 18px;

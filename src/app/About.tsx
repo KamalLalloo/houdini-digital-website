@@ -8,15 +8,14 @@ export default function About() {
       <div className={styles.container}>
         <h2 className={styles.heading}>About Houdini Digital</h2>
         <p className={styles.text}>
-          Houdini Digital is a small web design agency that helps businesses
-          grow online through custom-built, SEO-optimized websites and landing
-          pages.
+          Houdini Digital is a creative web studio that helps service-based
+          businesses stand out online with clear, high-performing websites and
+          landing pages.
         </p>
         <p className={styles.text}>
-          We focus on clarity, speed, and strategy — making sure your site
-          doesn’t just look good, but performs. We’ve helped businesses launch
-          clean, high-converting websites that speak to their audience and drive
-          real results.
+          We build with purpose—focusing on clarity, speed, and results. Every
+          site we launch is designed to convert, optimized for search, and built
+          to grow with your business.
         </p>
       </div>
     </section>
