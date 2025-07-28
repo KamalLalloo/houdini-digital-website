@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Syne, Montserrat } from "next/font/google";
+import PreloaderWrapper from "./PreloaderWrapper"; // new wrapper we'll make
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -25,7 +26,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${montserrat.className} ${syne.className}`}>
-      <body>{children}</body>
+      <body>
+        <PreloaderWrapper>{children}</PreloaderWrapper>
+      </body>
     </html>
   );
 }
